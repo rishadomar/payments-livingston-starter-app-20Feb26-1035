@@ -1,6 +1,6 @@
 {
     "en": {
-        "dashboardTitle": "Dashboard",
+        "dashboardTitle": "Livingston dashboard",
         "allDocumentsTitle": "All Documents",
         "allDocumentsDescription": "All documents in the system",
         "analyticsTitle": "Analytics",
@@ -34,7 +34,7 @@
         "gridColumnCurrentMilestone": "Current Milestone"
     },
     "fr": {
-        "dashboardTitle": "Tableau de bord",
+        "dashboardTitle": "Tableau de bord de Livingston",
         "allDocumentsTitle": "Tous les documents",
         "allDocumentsDescription": "Tous les documents du système",
         "analyticsTitle": "Analytique",
@@ -68,7 +68,7 @@
         "gridColumnCurrentMilestone": "Jalon actuel"
     },
     "es": {
-        "dashboardTitle": "Tablero",
+        "dashboardTitle": "Tablero de Livingston",
         "allDocumentsTitle": "Todos los documentos",
         "allDocumentsDescription": "Todos los documentos en el sistema",
         "analyticsTitle": "Analítica",
