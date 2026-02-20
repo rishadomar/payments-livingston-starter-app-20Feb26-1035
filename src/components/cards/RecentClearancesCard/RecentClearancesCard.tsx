@@ -110,7 +110,7 @@ const RecentClearancesCard = () => {
     return (
         <Card className='dashboard-layout-table flex-fill'>
             <Card.Header>
-                <h4>{translate('recentClearancesCardTitle')}</h4>
+                <h4>My Clearances</h4>
             </Card.Header>
             <Card.Body className='p-0 flex-fill overflow-auto position-relative'>
                 <div className='table-wrapper w-100'>
