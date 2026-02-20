@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Grid, GridColumn as Column, GridCellProps, GridDataStateChangeEvent, GridCustomHeaderCellProps } from '@progress/kendo-react-grid';
+import { Grid, GridColumn as Column, GridCellProps, GridCustomHeaderCellProps, GridDataStateChangeEvent } from '@progress/kendo-react-grid';
 import { State } from '@progress/kendo-data-query';
 import { useKendoResponsiveColWidths } from 'livingston-npm-components';
 import { HeaderThElement } from '@progress/kendo-react-data-tools';
@@ -62,10 +62,10 @@ const RecentClearancesCard = () => {
     const translate = useTranslation();
     const columns = [
         {
-            field: 'EntryNo',
-            title: translate('gridColumnEntryNo'),
-            minWidth: 160,
-            cell: { data: EntryNoCell, headerCell: EntryNoHeader }
+            field: 'Status',
+            title: translate('gridColumnStatus'),
+            minWidth: 120,
+            cell: { data: StatusCell }
         },
         {
             field: 'CargoControlNo',
@@ -73,10 +73,10 @@ const RecentClearancesCard = () => {
             minWidth: 180
         },
         {
-            field: 'Status',
-            title: translate('gridColumnStatus'),
-            minWidth: 120,
-            cell: { data: StatusCell }
+            field: 'EntryNo',
+            title: translate('gridColumnEntryNo'),
+            minWidth: 160,
+            cell: { data: EntryNoCell, headerCell: EntryNoHeader }
         },
         {
             field: 'CurrentMilestone',
@@ -103,7 +103,6 @@ const RecentClearancesCard = () => {
     const gridIsLoading = isLoading || isFetching;
 
     const handleDataStateChange = async (e: GridDataStateChangeEvent) => {
-        // console.log('dataState', e.dataState);
         setDataState(e.dataState);
     };
 
